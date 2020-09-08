@@ -84,6 +84,7 @@ void checkButtons(int b1)
   Serial.println(digitalRead(b1));
 }
 
+//puts a start pattern until it detects user input on start button.
 void startPattern(){
   long ms = millis();
   long sec = ms/1000;//time
@@ -129,6 +130,7 @@ void allOff(){
     digitalWrite(led4,LOW);
     digitalWrite(led5,LOW);
 }
+
 
 void gamePattern(){
   long ms = millis();
